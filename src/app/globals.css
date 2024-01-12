@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Apocalypse Grunge";
+  src: url("../assets/fonts/Apocalypse Grunge.ttf");
+}
+
+@font-face {
+  font-family: "Binaria";
+  src: url("../assets/fonts/binaria/TTF/Binaria-Bold.ttf");
+}
+
+.btn-red {
+  @apply rounded-[10px] shadow-text bg-red hover:bg-red2 shadow-box;
+}
+
+.btn-blue {
+  @apply rounded-[10px] shadow-text bg-blue hover:bg-blue2 shadow-box text-white py-5;
+}
+
+.action-btn {
+  @apply rounded-[10px] border border-[black] shadow-text bg-white hover:bg-[#EFEFEF] shadow-box text-[14px];
+
+}
+
+body {
+  letter-spacing: 1.5px;
+}
+
+.shadow-text {
+  text-shadow: -1.5px 1.5px 0px #0A0909;
+}
+
+.shadow-text-lg {
+  text-shadow: -6px 6px 0px #0A0909;
+}
+
+.shadow-box {
+  box-shadow: -1.5px 1.5px 0px 0px #0A0909;
+}
+
+.loading-bg {
+  background-image: url("../assets/images/bg-loading.png");
+  background-size: cover;
+}
+
+.about-bg {
+  background-image:  url("../assets/images/bg-about.png"), url("../assets/images/bg-loading.png") ;
+  background-color: #FFF7AA;
+  background-size: contain;
+}
+
+.bg-paint-strokes {
+  background-image: url("../assets/images/paint-stroke.png");
+  background-size: 200%;
+}
+input {
+  border-radius: 10px;
+  box-shadow: -1.5px 1.5px 0px 0px #0A0909;
+  background-color: white;
+  border: 1px solid black;
+  letter-spacing: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #0A0909;
+  /* opacity: 0.5; */
+}
+
+.bg-coming-soon {
+  background-image: url("../assets/images/bg-coming-soon.png"), url("../assets/images/bg-loading.png");
+  background-size: cover;
+}
+
+.coming-soon-bottom-carousel {
+  background-image: url("../assets/images/carousel.png");
+  background-repeat: repeat-x;
+  height: 512px;
+  width: 5556px;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-66.6666%); /* The image width */
+  }
+}
