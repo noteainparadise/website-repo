@@ -17,6 +17,9 @@ export default function ComingSoon() {
     return (
         <div>
             <main className="bg-coming-soon h-full absolute w-full flex items-center justify-center">
+                <a href="/about" className="absolute top-6 right-8 action-btn w-20 md:w-32  md:p-5 uppercase text-center">
+                    About Us
+                </a>
                 <div className="absolute top-0 py-8 flex justify-center">
                     <Image 
                         src={logo} 
