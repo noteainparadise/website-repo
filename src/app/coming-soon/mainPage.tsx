@@ -12,7 +12,7 @@ const MAILCHIMP_URL = 'https://gmail.us14.list-manage.com/subscribe/post?u=c6d03
 export default function ComingSoon() {
     const [showModal, setShowModal] = useState(true);
     const [email, setEmail] = useState("");
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>, subscribe) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>, subscribe: any) => {
         e.preventDefault();
         
         email &&
