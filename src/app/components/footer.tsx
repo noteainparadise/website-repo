@@ -10,17 +10,17 @@ import tiktokImg from "../../assets/images/tiktok.svg";
 const SOCIALS = [
     {
         name: "Instagram",
-        link: "https://www.instagram.com/notearadio/",
+        link: "https://www.instagram.com/noteainparadise/",
         icon: instaImg
     },
     {
         name: "Twitter",
-        link: "https://twitter.com/notearadio",
+        link: "https://twitter.com/noteainparadise",
         icon: twitterImg
     },
     {
         name: "TikTok",
-        link: "https://www.tiktok.com/@notearadio",
+        link: "https://www.tiktok.com/@no.tea.in.paradise",
         icon: tiktokImg
     }
 
