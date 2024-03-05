@@ -7,7 +7,7 @@ export default function AgeVerificationModal({ show, onConfirm, onCancel }: {sho
 
     if(!show) return null;
     return (
-        <div className="absolute top-0 bottom-0 left-0 right-0 bg-[#0a090966] backdrop-blur-md flex items-center justify-center">
+        <div className="absolute top-0 bottom-0 left-0 right-0 bg-[#0a090966] backdrop-blur-md flex items-center justify-center z-20">
             <div className="relative">
                 <Image src={textBox} alt="Text Box" className="max-w-[300px] md:max-w-[815px]" />
                 <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col md:gap-8 items-center translate-y-[70px] md:translate-y-[160px]">
